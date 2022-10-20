@@ -33,7 +33,7 @@ function Header() {
                 </li>
                 <li className="nav__item">
                     <a href="#portfolio" className="nav__link">
-                        <i className="uil uil-building nav__icon"></i>Mekanlar
+                        <i className="uil uil-scenery nav__icon"></i>Sanat
                     </a>
                 </li>
                 <li className="nav__item">
@@ -41,16 +41,12 @@ function Header() {
                         <i className="uil uil-message nav__icon"></i>İletisim
                     </a>
                 </li>
-            
-            </ul>
-            <div className="nav__signBtn">
-            <div className="nav__item nav__sign">
-                    <a class="nav__btn" href="#btn" className="nav__link">
-                        <i className="uil uil-user nav__icon nav__btnIcon"></i>Giris
+                <li className="nav__item">
+                    <a class="btn" href="#btn" className="nav__link">
+                        <i className="uil uil-message nav__icon"></i>Giris
                     </a>
-            </div>
-            </div>
-         
+                </li>
+            </ul>
             <i className="uil uil-times nav__close" onClick={()=> showMenu(!Toggle)}></i>
           </div>
           <div className="nav__toggle" onClick={()=> showMenu(!Toggle)}>
@@ -62,4 +58,3 @@ function Header() {
 }
 
 export default Header
-
