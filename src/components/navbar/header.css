@@ -197,6 +197,25 @@ img{
     transition: .3s;
 
 }
+.nav__menu{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+}
+.nav__sign{
+  text-align: center;
+  padding: 0.4rem;
+  width: 100px;
+  margin-left: 4rem;
+  background-color:#4285f4;
+  color:white;
+  border-radius: 20px;
+}
+
+.nav__sign a{
+  color: white;
+}
 .nav__icon,
 .nav__close,
 .nav__toggle{
@@ -226,6 +245,7 @@ img{
         height: 3rem;
     }
     .nav__menu{
+        display:block;
         position: fixed;
         bottom: -100%;
         left: 0;
@@ -236,6 +256,26 @@ img{
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
     }
+    /* Mobil görünümde giriş butonu */
+    .nav__signBtn{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    .nav__btn{
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+    }
+    .nav__sign{
+      text-align: center;
+      margin-right: 3rem;
+      width: 50%;
+      margin-top: 2rem;
+      margin-bottom: -2rem;
+    }
+   
     /* show menu */
     .show-menu{
         bottom:0;
@@ -252,6 +292,10 @@ img{
     }
     .nav__icon{
         font-size: 1.2rem;
+    }
+    .nav__btnIcon{
+      font-size: 1rem;
+      margin-right: 0.2rem;
     }
     .nav__close{
         position: absolute;
