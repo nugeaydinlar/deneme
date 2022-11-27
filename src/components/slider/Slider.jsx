@@ -1,44 +1,52 @@
-import React from 'react'
-import './tweenslider.js';
-import './script.js';
+import React, { useState } from 'react'
+import './slider.css';
+
 
 function Slider() {
+     
+    const[Toggle,showMenu] = useState(false);
   return (
     <div>
-<section id="slider" class="section">
-<div class="slider">
-  <div class="slider__container">
-    <div class="slider__item slide-burger">
-      <div class="slider__content grid">
-        <div class="column">
-          <h1 class="title">Veggie</h1>
-          <h1 class="title">Burguer</h1>
-        </div>
-        {/* <div class="column"><img src="https://mverissimo.github.io/tweenslideshow/dist/assets/images/burger.png" class="image burger"></div> */}
-      </div>
-    </div>
-    <div class="slider__item slide-astronaut">
-      <div class="slider__content grid">
-        <div class="column">
-          <h1 class="title">lost</h1>
-          <h1 class="title">in space</h1>
-        </div>
-        {/* <div class="column"><img src="https://mverissimo.github.io/tweenslideshow/dist/assets/images/astronaut.png" class="image astronaut"></div> */}
-      </div>
-    </div>
-    <div class="slider__item slide-coffee">
-      <div class="slider__content grid">
-        <div class="column">
-          <h1 class="title">I Love</h1>
-          <h1 class="title">Coffee</h1>
-        </div>
-        {/* <div class="column"><img src="https://mverissimo.github.io/tweenslideshow/dist/assets/images/cup-2.png" class="image cup"></div> */}
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
+  <div class="slider">
+                <input class="slider__dot" id="slider1" type="radio" name="slider" title="slide1" checked="checked"/>
+                <input class="slider__dot" type="radio" name="slider" title="slide2"/>
+                <input class="slider__dot" type="radio" name="slider" title="slide3"/>
+                <input class="slider__dot" type="radio" name="slider" title="slide4"/>
+                <div class="slider__inner">
+                  <div class="slider__body" id="slider1">
+              
+                    <h2 class="slider__caption">Konserler</h2>
+                    <p class="slider__text">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!
+                          </p>
+                          <a href="/"><button class="bn632-hover bn24">Kesfet</button></a>
+                  </div>
+                  <div class="slider__body">
+                         
+                    <h2 class="slider__caption">Etkinlikler</h2>
+                    <p class="slider__text">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!
+                          </p>
+                          <a href="/"><button class="bn632-hover bn24">Kesfet</button></a>
+                  </div>
+                  <div class="slider__body">
+                         
+                    <h2 class="slider__caption">Hatlar</h2>
+                    <p class="slider__text">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!
+                          </p>
+                          <a href="#service"><button class="bn632-hover bn24">Kesfet</button></a>
+                  </div>
+                  <div class="slider__body">
+                        
+                    <h2 class="slider__caption">Mekanlar</h2>
+                    <p class="slider__text">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!
+                          </p>
+                          <a href="#about"><button class="bn632-hover bn24">Kesfet</button></a>    
+                  </div>
+                </div>
+              </div>
     </div>
   )
 }

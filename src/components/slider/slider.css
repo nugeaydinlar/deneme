@@ -1,0 +1,172 @@
+
+  .slider {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .slider__dot {
+    width: 16px;
+    height: 16px;
+    margin: 2rem 16px;
+    border-radius: 50%;
+    z-index: 10;
+    background-color: #ccc;
+    outline: 8px solid #ccc;
+    outline-offset: -8px;
+    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  .slider__dot:checked {
+    background-color: #333;
+    -webkit-animation: check 1s linear forwards;
+            animation: check 1s linear forwards;
+  }
+  .slider__dot:checked:nth-of-type(1) ~ .slider__inner {
+    transform: translateX(0%);
+  }
+  .slider__dot:checked:nth-of-type(2) ~ .slider__inner {
+    transform: translateX(-25%);
+  }
+  .slider__dot:checked:nth-of-type(3) ~ .slider__inner {
+    transform: translateX(-50%);
+  }
+  .slider__dot:checked:nth-of-type(4) ~ .slider__inner {
+    transform: translateX(-75%);
+  }
+  .slider__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    transition: all 1s ease-out;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .slider__body {
+
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
+    text-align: center;
+
+  }
+  .slider__body:nth-child(1){
+    background-image:url("./event.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+  .slider__body:nth-child(2){
+    background-image:url("./mekan.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+  }
+  .slider__body:nth-child(3){
+    background-image:url("./hat.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .slider__body:nth-child(4){
+    background-image:url("./gezi.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+  }
+  .slider__image {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+  }
+  .slider__caption {
+    font-weight: 800;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  .slider__text {
+    font-weight: 600;
+    color: rgb(186, 180, 180);
+    margin-bottom: 3rem;
+    max-width: 300px;
+  }
+  
+  @-webkit-keyframes check {
+    50% {
+      outline-color: #333;
+      box-shadow: 0 0 0 16px #333, 0 0 0 48px rgba(51, 51, 51, 0.2);
+    }
+    100% {
+      outline-color: #333;
+      box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+    }
+  }
+  
+  @keyframes check {
+    50% {
+      outline-color: #333;
+      box-shadow: 0 0 0 16px #333, 0 0 0 48px rgba(51, 51, 51, 0.2);
+    }
+    100% {
+      outline-color: #333;
+      box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+    }
+  }
+  .bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 20px;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn24 {
+    background-image: linear-gradient(
+        to right,
+        #6253e1,
+        #852d91,
+        #a3a1ff,
+        #f24645
+      );
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  }
