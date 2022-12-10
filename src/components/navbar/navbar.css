@@ -129,7 +129,7 @@ img{
 }
 
 /* layout */
-.container{
+.nav__container{
   max-width: 968px;
   margin-left: auto ;
   margin-right: auto;

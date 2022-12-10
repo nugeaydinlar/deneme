@@ -1,16 +1,13 @@
 import React from 'react'
-import Navbar from '../components/navbar/Navbar'
 import '../css/blog.css'
+import Navbar from '../components/navbar/Navbar';
+import { Homee } from './homeblog/Homee'
 
 const Blog = () => {
   return (
      <div className='blog'>
-        <div className="navbar">
-          <Navbar />
-        </div>
-        <div className="blog__container">
-          <h2>Blog sayfası</h2> 
-        </div>
+        <Navbar />
+        <Homee />
         
       
      </div>
